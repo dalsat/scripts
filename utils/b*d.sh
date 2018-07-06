@@ -1,2 +1,2 @@
 unset $HISTFILE
-sleep $(( 30 * 60 )); for i in "poffarre" "diamine" "ostregheta" "uot a sceim"; do sleep $(( (1 + ($RANDOM % 4)) * 60 )); say -v "Luca" "${i}, ai did not lock my computer\!"; done & disown
+sleep $(( 30 * 60 )); for i in "poffarre" "diamine" "ostregheta" "uot a sceim"; do osascript -e 'set volume 5'; sleep $(( (1 + ($RANDOM % 4)) * 60 )); say -v "Luca" "${i}, ai did not lock my computer\!"; done & disown
